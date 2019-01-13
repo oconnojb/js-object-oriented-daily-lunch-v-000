@@ -22,7 +22,7 @@ class Meal {
 
   customers() {
     let deliveries = this.deliveries();
-    //console.log(deliveries)
+    console.log(deliveries)
 
 
   }
@@ -111,7 +111,6 @@ class Customer {
 
   totalSpent() {
     let meals = this.meals();
-    console.log(meals)
     let total = 0;
 
     meals.forEach(
