@@ -184,7 +184,8 @@ class Neighborhood {
         ))
       }
     );
-    console.log(deliveries)
+    
+    console.log(newStore)
   }
 
 }
