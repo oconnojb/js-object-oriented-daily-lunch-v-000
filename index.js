@@ -88,7 +88,7 @@ class Customer {
 
   meals() {
     let deliveries = this.deliveries;
-    console.log(deliveries);
+    //console.log(deliveries);
 
     let newStore = { meals: [] };
     deliveries.forEach(
