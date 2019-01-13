@@ -88,7 +88,7 @@ class Customer {
 
   meals() {
     let deliveries = this.deliveries;
-    console.log(meals);
+    console.log(deliveries);
   }
 
   totalSpent() {}
