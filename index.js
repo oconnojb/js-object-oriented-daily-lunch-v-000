@@ -90,15 +90,14 @@ class Customer {
     let deliveries = this.deliveries();
     //console.log(deliveries);
 
-    let newStore = { mealsIds: [] };
+    let newStore = { mealIds: [] };
     deliveries.forEach(
       function(element) {
         newStore.mealIds.push(element.mealId);
-        console.log(newStore)
       }
     );
 
-    
+    console.log(newStore)
   }
 
   totalSpent() {}
