@@ -87,11 +87,8 @@ class Customer {
   }
 
   meals() {
-    // return store.meals.filter(
-    //   function(meal) {
-    //     return meal.customers.includes(this)
-    //   }.bind(this)
-    // )
+    let meals = this.meals;
+    console.log(meals);
   }
 
   totalSpent() {}
