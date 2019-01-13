@@ -23,8 +23,16 @@ class Meal {
   customers() {
     let deliveries = this.deliveries();
     console.log(deliveries)
-
-
+    let newStore = {customers: []}
+    deliveries.forEach(
+      function(element) {
+        newStore.customers.push(store.customers.find(
+          function(customer) {
+            return customer.id === element
+          }
+        ))
+      }
+    );
   }
 
   byPrice() {}
