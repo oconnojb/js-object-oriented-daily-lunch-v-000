@@ -107,13 +107,12 @@ class Customer {
             return meal.id === element)
           }
         )
-      )
       }
     );
 
     console.log(newStore)
 
-  
+
   }
 
   totalSpent() {}
