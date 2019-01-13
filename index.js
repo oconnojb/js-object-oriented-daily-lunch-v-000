@@ -22,7 +22,7 @@ class Meal {
 
   customers() {
     let deliveries = this.deliveries();
-    console.log(deliveries)
+    //console.log(deliveries)
 
 
   }
