@@ -97,7 +97,7 @@ class Customer {
       }
     );
 
-    console.log(newStore.mealIds)
+    console.log(newStore)
   }
 
   totalSpent() {}
