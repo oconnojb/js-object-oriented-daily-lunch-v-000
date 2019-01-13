@@ -97,15 +97,7 @@ class Customer {
       }
     );
 
-    newStore.mealIds.forEach(
-      function(element) {
-        newStore.meals.push(store.meals.find(
-          function(meal) {
-            return meal.id === this
-          }.bind(this)
-        ))
-      }
-    );
+
     console.log(newStore)
   }
 
