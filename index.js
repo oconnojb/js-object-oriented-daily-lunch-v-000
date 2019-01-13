@@ -28,6 +28,7 @@ class Meal {
       function(element) {
         newStore.customers.push(store.customers.find(
           function(customer) {
+            console.log(element)
             return customer.id === element
           }
         ))
