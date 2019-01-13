@@ -93,7 +93,7 @@ class Customer {
     let newStore = { meals: [] };
     deliveries.forEach(
       function(element) {
-        console.log(element);
+        console.log(element.mealId);
       }
     );
   }
