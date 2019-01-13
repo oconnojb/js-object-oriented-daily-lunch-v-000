@@ -103,7 +103,9 @@ class Customer {
       function(element) {
         newStore.meals.push(store.meals.find(
           function(meal) {
-            return meal.id === element
+            if (meal.id === element) {
+              return meal.title
+            }
           }
         ))
       }
