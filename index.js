@@ -115,7 +115,9 @@ class Customer {
         newStore.mealTitles.push(element.title)
       }
     )
-    console.log(newStore)
+    console.log(newStore);
+
+    return newStore.mealTitles
   }
 
   totalSpent() {}
