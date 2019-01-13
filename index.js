@@ -165,6 +165,9 @@ class Neighborhood {
     );
   }
 
-  meals() {}
+  meals() {
+    let deliveries = this.deliveries;
+    console.log(deliveries)
+  }
 
 }
