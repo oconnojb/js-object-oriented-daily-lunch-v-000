@@ -184,8 +184,12 @@ class Neighborhood {
         ))
       }
     );
-    
+
     console.log(newStore)
+
+    let unique = [...new Set(newStore.meals)];
+
+    console.log(unique)
   }
 
 }
