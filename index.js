@@ -190,6 +190,7 @@ class Neighborhood {
     let unique = [...new Set(newStore.meals)];
 
     console.log(unique)
+    return unique
   }
 
 }
