@@ -33,6 +33,7 @@ class Meal {
         ))
       }
     );
+    console.log(newStore)
   }
 
   byPrice() {}
