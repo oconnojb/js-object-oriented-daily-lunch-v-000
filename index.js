@@ -113,7 +113,7 @@ class Customer {
 
     console.log(newStore)
 
-    )
+  
   }
 
   totalSpent() {}
