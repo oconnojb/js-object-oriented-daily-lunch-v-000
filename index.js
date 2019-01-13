@@ -101,12 +101,12 @@ class Customer {
       function(element) {
         newStore.meals.push(store.meals.find(
           function(meal) {
-            console.log(element)
             return meal.id === this
           }.bind(this)
         ))
       }
     );
+    console.log(newStore)
   }
 
   totalSpent() {}
