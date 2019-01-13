@@ -94,10 +94,11 @@ class Customer {
     deliveries.forEach(
       function(element) {
         newStore.mealIds.push(element.mealId);
+        console.log(newStore)
       }
     );
 
-    console.log(newStore)
+    
   }
 
   totalSpent() {}
