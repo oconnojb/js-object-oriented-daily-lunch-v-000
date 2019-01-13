@@ -91,9 +91,11 @@ class Customer {
     console.log(deliveries);
 
     let newStore = { meals: [] };
-    deliveries..forEach(function(element) {
-  console.log(element);
-});
+    deliveries.forEach(
+      function(element) {
+        console.log(element);
+      }
+    );
   }
 
   totalSpent() {}
