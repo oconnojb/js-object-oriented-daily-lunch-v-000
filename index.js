@@ -90,14 +90,23 @@ class Customer {
     let deliveries = this.deliveries();
     //console.log(deliveries);
 
-    let newStore = { mealIds: [] };
+    let newStore = { mealIds: [], meals };
     deliveries.forEach(
       function(element) {
         newStore.mealIds.push(element.mealId);
       }
     );
 
-    console.log(newStore)
+    newStore.mealIds.forEach(
+      function(element) {
+        newStore.meals.push(store.meals.find(
+          function(meal) {
+            console.log(element + "--" + meal.id)
+            return meal.id === element
+          }
+        ))
+      }
+    );
   }
 
   totalSpent() {}
