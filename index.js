@@ -117,7 +117,7 @@ class Customer {
     )
     console.log(newStore);
 
-    return newStore.mealTitles
+    return newStore.meals
   }
 
   totalSpent() {}
