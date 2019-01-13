@@ -105,6 +105,7 @@ class Customer {
           function(meal) {
             if (meal.id === element) {
               console.log(meal.title)
+              return meal.title
             }
           }
         ))
