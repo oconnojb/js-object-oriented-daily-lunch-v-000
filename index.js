@@ -38,9 +38,9 @@ class Meal {
   }
 
   static byPrice() {
-    store.meals.sort(function (a, b) {
-      return a.value - b.value;
-    });
+    store.meals.sort(function compareNumbers(a, b) {
+  return a.price - b.price;
+})
   }
 }
 
