@@ -166,7 +166,7 @@ class Neighborhood {
   }
 
   meals() {
-    let deliveries = this.deliveries;
+    let deliveries = this.deliveries();
     console.log(deliveries)
   }
 
