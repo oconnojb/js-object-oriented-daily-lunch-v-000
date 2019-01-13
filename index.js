@@ -99,7 +99,7 @@ class Customer {
     );
 
     console.log(newStore.mealIds)
-    
+
     newStore.mealIds.forEach(
       function(element) {
         newStore.meals.push(store.meals.find(
@@ -110,13 +110,9 @@ class Customer {
       )
       }
     );
-    
+
     console.log(newStore)
 
-    newStore.meals.forEach(
-      funciton(element) {
-        
-      }
     )
   }
 
