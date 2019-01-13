@@ -111,7 +111,10 @@ class Customer {
     return newStore.meals
   }
 
-  totalSpent() {}
+  totalSpent() {
+    let meals = this.meals();
+    console.log(meals)
+  }
 }
 
 //NEIGHBORHOOD
