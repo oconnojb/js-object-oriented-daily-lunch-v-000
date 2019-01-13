@@ -33,7 +33,7 @@ class Meal {
         ))
       }
     );
-    console.log(newStore)
+    return newStore.customers
   }
 
   byPrice() {}
