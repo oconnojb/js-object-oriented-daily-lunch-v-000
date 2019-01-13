@@ -91,22 +91,15 @@ class Customer {
     console.log(deliveries);
 
     let newStore = { mealIds: [], meals };
+    
     deliveries.forEach(
       function(element) {
         newStore.mealIds.push(element.mealId);
       }
     );
+    
     console.log(newStore.mealIds)
-    newStore.mealIds.forEach(
-      function(element) {
-        newStore.meals.push(store.meals.find(
-          function(meal) {
-            return meal.id === this
-          }.bind(this)
-        ))
-      }
-    );
-    console.log(newStore)
+
   }
 
   totalSpent() {}
