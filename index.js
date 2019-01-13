@@ -88,7 +88,7 @@ class Customer {
 
   meals() {
     let deliveries = this.deliveries();
-    //console.log(deliveries);
+    console.log(deliveries);
 
     let newStore = { mealIds: [], meals };
     deliveries.forEach(
@@ -97,7 +97,15 @@ class Customer {
       }
     );
 
-
+    newStore.mealIds.forEach(
+      function(element) {
+        newStore.meals.push(store.meals.find(
+          function(meal) {
+            return meal.id === this
+          }.bind(this)
+        ))
+      }
+    );
     console.log(newStore)
   }
 
