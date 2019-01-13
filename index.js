@@ -24,7 +24,7 @@ class Meal {
     let deliveries = this.deliveries();
     console.log(deliveries)
 
-    
+
   }
 
   byPrice() {}
@@ -87,7 +87,7 @@ class Customer {
   }
 
   meals() {
-    let meals = this.meals;
+    let deliveries = this.deliveries;
     console.log(meals);
   }
 
