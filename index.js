@@ -110,9 +110,12 @@ class Customer {
       }
     );
 
+    newStore.meals.forEach(
+      function (element) {
+        newStore.mealTitles.push(element.title)
+      }
+    )
     console.log(newStore)
-
-
   }
 
   totalSpent() {}
