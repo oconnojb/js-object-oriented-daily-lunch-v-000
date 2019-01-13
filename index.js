@@ -112,6 +112,15 @@ class Customer {
   totalSpent() {
     let meals = this.meals();
     console.log(meals)
+    let total = 0;
+
+    meals.forEach(
+      function(element) {
+        total += element.price
+      }
+    )
+
+    return total;
   }
 }
 
