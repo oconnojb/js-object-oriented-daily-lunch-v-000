@@ -167,6 +167,23 @@ class Neighborhood {
 
   meals() {
     let deliveries = this.deliveries();
+    let newStore = { mealIds: [], meals: [] };
+
+    deliveries.forEach(
+      function(element) {
+        newStore.mealIds.push(element.mealId);
+      }
+    );
+
+    newStore.mealIds.forEach(
+      function(element) {
+        newStore.meals.push(store.meals.find(
+          function(meal) {
+            return meal.id === element
+          }
+        ))
+      }
+    );
     console.log(deliveries)
   }
 
