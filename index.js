@@ -90,15 +90,13 @@ class Customer {
     let deliveries = this.deliveries();
     console.log(deliveries);
 
-    let newStore = { mealIds: [], meals: [], mealTitles: [] };
+    let newStore = { mealIds: [], meals: [] };
 
     deliveries.forEach(
       function(element) {
         newStore.mealIds.push(element.mealId);
       }
     );
-
-    console.log(newStore.mealIds)
 
     newStore.mealIds.forEach(
       function(element) {
@@ -109,13 +107,6 @@ class Customer {
         ))
       }
     );
-
-    newStore.meals.forEach(
-      function (element) {
-        newStore.mealTitles.push(element.title)
-      }
-    )
-    console.log(newStore);
 
     return newStore.meals
   }
