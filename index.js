@@ -22,8 +22,8 @@ class Meal {
 
   customers() {
     let deliveries = this.deliveries();
-    console.log(deliveries)
     let newStore = {customers: []}
+
     deliveries.forEach(
       function(element) {
         newStore.customers.push(store.customers.find(
@@ -33,10 +33,13 @@ class Meal {
         ))
       }
     );
+
     return newStore.customers
   }
 
-  byPrice() {}
+  byPrice() {
+    return store.meals.sort();
+  }
 }
 
 //DELIVERY
