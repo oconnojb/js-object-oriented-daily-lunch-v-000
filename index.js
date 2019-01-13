@@ -37,7 +37,7 @@ class Meal {
     return newStore.customers
   }
 
-  byPrice() {
+  static byPrice() {
     console.log(store)
   }
 }
