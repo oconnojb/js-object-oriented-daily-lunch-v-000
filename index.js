@@ -103,6 +103,7 @@ class Customer {
       function(element) {
         newStore.meals.push(store.meals.find(
           function(meal) {
+            console.log("This:" + this)
             return meal.id === this
           }.bind(this)
         ))
