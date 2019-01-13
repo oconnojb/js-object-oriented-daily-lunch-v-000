@@ -90,7 +90,7 @@ class Customer {
     let deliveries = this.deliveries();
     console.log(deliveries);
 
-    let newStore = { mealIds: [], meals: [] };
+    let newStore = { mealIds: [], meals: [], mealTitles: [] };
 
     deliveries.forEach(
       function(element) {
@@ -99,19 +99,25 @@ class Customer {
     );
 
     console.log(newStore.mealIds)
+    
     newStore.mealIds.forEach(
       function(element) {
         newStore.meals.push(store.meals.find(
           function(meal) {
-            if (meal.id === element) {
-              console.log(meal.title)
-              return meal.title
-            }
+            return meal.id === element)
           }
-        ))
+        )
+      )
       }
     );
+    
     console.log(newStore)
+
+    newStore.meals.forEach(
+      funciton(element) {
+        
+      }
+    )
   }
 
   totalSpent() {}
