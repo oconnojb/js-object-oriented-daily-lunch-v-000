@@ -38,7 +38,7 @@ class Meal {
   }
 
   static byPrice() {
-    console.log(store)
+    return store.meals.sort()
   }
 }
 
