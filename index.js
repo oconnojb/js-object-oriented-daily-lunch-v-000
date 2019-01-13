@@ -104,7 +104,7 @@ class Customer {
         newStore.meals.push(store.meals.find(
           function(meal) {
             return meal.id === element
-          }.bind(this)
+          }
         ))
       }
     );
